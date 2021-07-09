@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { ServiceComponent } from './components/services/service.component';
+import { TravelComponent } from './components/travel/travel.component';
 import { PicturesComponent } from './components/pictures/pictures.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ErrorComponent } from './common/404/404.component';
@@ -24,7 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ServiceComponent,
+    TravelComponent,
     PicturesComponent,
     BlogComponent,
     ErrorComponent,
