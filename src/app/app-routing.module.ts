@@ -4,7 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { TravelComponent } from './components/travel/travel.component';
 import { PicturesComponent } from './components/pictures/pictures.component';
-import { BlogComponent } from './components/blog/blog.component';
+import { WeddingPartyComponent } from './components/wedding-party/wedding-party.component';
 import { ErrorComponent } from './common/404/404.component';
 import { BlogDetailComponent } from './components/blog-detail/blogdetail.component';
 import { LoginComponent } from './components/login/login.component';
@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'our-story', component: AboutComponent },
   { path: 'travel', component: TravelComponent },
   { path: 'pictures', component: PicturesComponent },
-  { path: 'wedding-party', component: BlogComponent },
+  { path: 'wedding-party', component: WeddingPartyComponent },
   { path: '404', component: ErrorComponent },
   { path: 'schedule', component: BlogDetailComponent },
   { path: 'login', component: LoginComponent },

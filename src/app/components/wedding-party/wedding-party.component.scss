@@ -1,0 +1,118 @@
+.party-box {
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .filters li a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 5px 20px 5px;
+    color: #314584;
+    border-radius: 30px;
+    font-weight: 400;
+    background: #e8e8e8;
+  }
+  
+    .filters li a.active {
+      background: #e63f4b;
+      color: #fff;
+    }
+  
+  .img-overlay {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background: #314584;
+    visibility: hidden;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    padding: 1rem 2rem;
+    transition: all .3s ease;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .party-icon {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 24px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: 40px;
+  }
+  
+    .party-icon a {
+      color: #e63f4b;
+    }
+  
+      .party-icon a:hover {
+        color: #fff;
+      }
+  
+    .party-icon:hover {
+      background: #e63f4b;
+    }
+  
+  .party-box:hover .img-overlay {
+    visibility: visible;
+    opacity: 1;
+    bottom: 0;
+  }
+  
+  .party-box:hover .party-icon {
+    visibility: visible;
+    opacity: 1;
+    top: 10px;
+  }
+
+  @media (max-width: 575px) {
+    .btn {
+      height: 40px;
+      font-size: 12px;
+      min-width: 120px;
+    }
+  
+    .party-filter li {
+      margin: 0 0 10px !important;
+      width: 50%;
+      float: left;
+    }
+  
+    .filters li a {
+      width: 98%;
+      margin: 0 10px;
+      display: flex;
+      justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .welcome-text h1, .welcome-text h1 span {
+        font-size: 28px;
+    }
+    
+    .party-filter li {
+        width: 100%;
+    }
+}
+
+.party-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Dawning of a New Day', cursive;
+    font-weight: 550;
+    font-size: 85px;
+    color: #8B9DAC;
+}

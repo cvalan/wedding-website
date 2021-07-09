@@ -8,7 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { TravelComponent } from './components/travel/travel.component';
 import { PicturesComponent } from './components/pictures/pictures.component';
-import { BlogComponent } from './components/blog/blog.component';
+import { WeddingPartyComponent } from './components/wedding-party/wedding-party.component';
 import { ErrorComponent } from './common/404/404.component';
 import { BlogDetailComponent } from './components/blog-detail/blogdetail.component';
 import { LoginComponent } from './components/login/login.component';
@@ -26,7 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutComponent,
     TravelComponent,
     PicturesComponent,
-    BlogComponent,
+    WeddingPartyComponent,
     ErrorComponent,
     ContactComponent,
     BlogDetailComponent,
