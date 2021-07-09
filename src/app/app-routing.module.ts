@@ -6,7 +6,7 @@ import { TravelComponent } from './components/travel/travel.component';
 import { PicturesComponent } from './components/pictures/pictures.component';
 import { WeddingPartyComponent } from './components/wedding-party/wedding-party.component';
 import { ErrorComponent } from './common/404/404.component';
-import { BlogDetailComponent } from './components/blog-detail/blogdetail.component';
+import { ScheduleComponent } from './components/schedule/schedule.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistryComponent } from './components/registry/registry.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'pictures', component: PicturesComponent },
   { path: 'wedding-party', component: WeddingPartyComponent },
   { path: '404', component: ErrorComponent },
-  { path: 'schedule', component: BlogDetailComponent },
+  { path: 'schedule', component: ScheduleComponent },
   { path: 'login', component: LoginComponent },
   { path: 'registry', component: RegistryComponent },
   { path: 'rsvp', component: ContactComponent } 
