@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ServiceComponent } from './components/services/service.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { PicturesComponent } from './components/pictures/pictures.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ErrorComponent } from './common/404/404.component';
 import { BlogDetailComponent } from './components/blog-detail/blogdetail.component';
@@ -25,7 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     AboutComponent,
     ServiceComponent,
-    PortfolioComponent,
+    PicturesComponent,
     BlogComponent,
     ErrorComponent,
     ContactComponent,
