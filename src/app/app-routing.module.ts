@@ -8,7 +8,7 @@ import { WeddingPartyComponent } from './components/wedding-party/wedding-party.
 import { ErrorComponent } from './common/404/404.component';
 import { BlogDetailComponent } from './components/blog-detail/blogdetail.component';
 import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
+import { RegistryComponent } from './components/registry/registry.component';
 import { ContactComponent } from './components/contact/contact.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: '404', component: ErrorComponent },
   { path: 'schedule', component: BlogDetailComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'registry', component: RegisterComponent },
+  { path: 'registry', component: RegistryComponent },
   { path: 'rsvp', component: ContactComponent } 
 ];
 
