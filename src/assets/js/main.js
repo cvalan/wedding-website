@@ -136,34 +136,6 @@ $(document).ready(function () {
     });
   }
 
-  if (('.party-items').length > 0) {
-    var $container = $('.party-items');
-    var $filter = $('#party-filter');
-    $container.isotope({
-      filter: '*',
-      layoutMode: 'masonry',
-      animationOptions: {
-        duration: 750,
-        easing: 'linear'
-      }
-    });
-    $filter.find('a').on("click", function () {
-      var selector = $(this).attr('data-filter');
-      $filter.find('a').removeClass('active');
-      $(this).addClass('active');
-      $container.isotope({
-        filter: selector,
-        animationOptions: {
-          animationDuration: 750,
-          easing: 'linear',
-          queue: false,
-          touchSensitivity: 2,
-        }
-      });
-      return false;
-    });
-  }
-
   /*----MAP INITIALIZE FUNCTION-----*/
   initialize();
 });
