@@ -1,0 +1,57 @@
+.single-person {
+  margin-top: 30px;
+}
+
+.party-photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.party-content {
+  position: absolute;
+  left: 3%;
+  top: 3%;
+  width: 94%;
+  height: 94%;
+  background-color: rgba(255, 61, 74, 0.95);
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.7);
+  -webkit-transition: .8s;
+  transition: .8s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.team-photo:hover .party-content {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.person-name {
+  margin-top: 30px;
+  transition: .6s;
+  text-transform: capitalize;
+}
+
+.single-person:hover .person-name {
+  margin-left: 15px;
+}
+
+.person-name h4 {
+  font-family: 'Dawning of a New Day', cursive;
+  font-weight: 700;
+  color: #323657;
+  font-size: 45px;
+  margin: 5px 0;
+}
+
+.person-name p {
+  color: #7D7D7D;
+  font-size: 18px;
+}

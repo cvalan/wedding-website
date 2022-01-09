@@ -6,13 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { ServiceComponent } from './components/services/service.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { BlogComponent } from './components/blog/blog.component';
+import { TravelComponent } from './components/travel/travel.component';
+import { PicturesComponent } from './components/pictures/pictures.component';
+import { WeddingPartyComponent } from './components/wedding-party/wedding-party.component';
 import { ErrorComponent } from './common/404/404.component';
-import { BlogDetailComponent } from './components/blog-detail/blogdetail.component';
+import { ScheduleComponent } from './components/schedule/schedule.component';
 import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
+import { RegistryComponent } from './components/registry/registry.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AppHeaderComponent } from './common/header/app.header.component';
 import { AppFooterComponent } from './common/footer/app.footer.component';
@@ -24,14 +24,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ServiceComponent,
-    PortfolioComponent,
-    BlogComponent,
+    TravelComponent,
+    PicturesComponent,
+    WeddingPartyComponent,
     ErrorComponent,
     ContactComponent,
-    BlogDetailComponent,
+    ScheduleComponent,
     LoginComponent,
-    RegisterComponent,
+    RegistryComponent,
     AppHeaderComponent,
     AppFooterComponent
   ],

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.toolbar {
+    background: #2A2A2A;
+}
+
+.background {
+    margin: 0 0 0;
+    padding: 9rem 0 0rem 0;
+    background: #2A2A2A;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Dawning of a New Day', cursive;
+    font-weight: 550;
+    font-size: 85px;
+    color: #8B9DAC;
+}
+
+.date {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.welcome-header h4 {
+    font-size: 32px;
+    color: #8B9DAC;
+    line-height: 35px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+  
+.welcome-text {
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+}

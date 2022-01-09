@@ -2,26 +2,26 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { ServiceComponent } from './components/services/service.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { BlogComponent } from './components/blog/blog.component';
+import { TravelComponent } from './components/travel/travel.component';
+import { PicturesComponent } from './components/pictures/pictures.component';
+import { WeddingPartyComponent } from './components/wedding-party/wedding-party.component';
 import { ErrorComponent } from './common/404/404.component';
-import { BlogDetailComponent } from './components/blog-detail/blogdetail.component';
+import { ScheduleComponent } from './components/schedule/schedule.component';
 import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
+import { RegistryComponent } from './components/registry/registry.component';
 import { ContactComponent } from './components/contact/contact.component';
 const routes: Routes = [
-  { path: '', redirectTo: '/index', pathMatch: 'full' },
-  { path: 'index', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'services', component: ServiceComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'blog', component: BlogComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'our-story', component: AboutComponent },
+  { path: 'travel', component: TravelComponent },
+  { path: 'pictures', component: PicturesComponent },
+  { path: 'wedding-party', component: WeddingPartyComponent },
   { path: '404', component: ErrorComponent },
-  { path: 'blog-detail', component: BlogDetailComponent },
+  { path: 'schedule', component: ScheduleComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'contact', component: ContactComponent } 
+  { path: 'registry', component: RegistryComponent },
+  { path: 'rsvp', component: ContactComponent } 
 ];
 
 @NgModule({
