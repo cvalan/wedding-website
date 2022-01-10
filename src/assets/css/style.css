@@ -422,8 +422,8 @@ ul {
 }
 
 .sticky-header .header_btn .white-btn {
-  background: #314584;
-  color: #fff;
+  background: #fff;
+  color: #314584;
 }
 
   .sticky-header .header_btn .white-btn:hover {
@@ -450,7 +450,7 @@ ul {
 
   .custom-nav.sticky-header {
     margin-top: 0px;
-    background-color: #fff;
+    background-color: #2A2A2A;
     box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
   }
 
@@ -488,7 +488,7 @@ ul {
   }
 
   .custom-nav.sticky-header .navbar-nav > li > a {
-    color: #314584;
+    color: #fff;
   }
 
     .custom-nav.sticky-header .navbar-nav > li > a::before {

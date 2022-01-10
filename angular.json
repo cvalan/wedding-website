@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tomillo": {
+    "wedding": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,13 +13,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tomillo",
+            "outputPath": "dist/wedding",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            //"deployUrl": "/angular-template/tomillo/",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -79,18 +78,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "tomillo:build"
+            "browserTarget": "wedding:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "tomillo:build:production"
+              "browserTarget": "wedding:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tomillo:build"
+            "browserTarget": "wedding:build"
           }
         },
         "test": {
@@ -127,15 +126,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "tomillo:serve"
+            "devServerTarget": "wedding:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "tomillo:serve:production"
+              "devServerTarget": "wedding:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "tomillo"
+  "defaultProject": "wedding"
 }
