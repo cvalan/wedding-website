@@ -16,6 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AppHeaderComponent } from './common/header/app.header.component';
 import { AppFooterComponent } from './common/footer/app.footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GoogleMapsModule } from '@angular/google-maps';
 // import {NgxTypedJsModule} from '../assets/js/ngx-typed-js/src/lib/ngx-typed-js.module';
 
 @NgModule({
@@ -37,7 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgwWowModule
+    NgwWowModule,
+    GoogleMapsModule
    // NgxTypedJsModule
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],

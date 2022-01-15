@@ -65,6 +65,22 @@
           <img src="assets/images/travel/hotel.jpg" class="img-fluid" alt="" />
         </div>
       </div>
+      <google-map
+        height="500px"
+        width="1200px"
+        [zoom]="zoom"
+        [center]="center"
+        [options]="options"
+      >
+      <map-marker
+      *ngFor="let marker of markers"
+      [position]="marker.position"
+      [label]="marker.label"
+      [title]="marker.title"
+      [options]="marker.options"
+    >
+    </map-marker>
+    </google-map>
     </div>
   </div>
 </section>
