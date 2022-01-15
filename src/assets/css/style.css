@@ -330,7 +330,7 @@ ul {
 
 .border-btn {
   border: 1px solid #dfdfdf;
-  color: #333;
+  color: #fff;
   background: #fff;
 }
 
@@ -845,7 +845,7 @@ ul {
 
 .about-content .text {
   font-size: 16px;
-  color: #333;
+  color: #fff;
   line-height: 30px;
 }
 
