@@ -99,6 +99,10 @@ ul {
   padding: 0;
 }
 
+.row {
+  margin-bottom: 4rem;
+}
+
 .back_top {
   background: #fff;
   border: 2px solid #314584;
@@ -832,7 +836,7 @@ ul {
         6.ABOUT US
 ============================*/
 .about-image-block, .about-text-block {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .about-content h4 {

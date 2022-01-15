@@ -2,12 +2,6 @@
 <section class="inner-hero-banner">
   <div class="inner-hero-text">
     <h1>Travel</h1>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Travel</li>
-      </ol>
-    </nav>
   </div>
 </section>
 <!-- Inner Banner End -->
@@ -54,7 +48,6 @@
         </div>
       </div>
     </div>
-    <br /><br />
     <div class="row align-items-center">
       <div class="col-md-6 col-sm-12">
         <div
@@ -68,7 +61,7 @@
               For those traveling - we've put together a list of hotels in the
               area.
               <br />
-              Rooms can be booked at the links below.
+              Rooms can be booked at the links below. More info can be found by clicking the links on the map.
             </p>
             <ul class="bullet--list mt-4">
               <li>
@@ -100,28 +93,28 @@
           data-wow-delay="0.4s"
           data-wow-duration="1.5s"
         >
-          <img src="assets/images/travel/hotel.jpg" class="img-fluid" alt="" />
+          <google-map
+      height="500px"
+      width="100%"
+      [zoom]="zoom"
+      [center]="center"
+      [options]="options"
+    >
+      <map-marker
+        #markerElem
+        *ngFor="let marker of markers"
+        [position]="marker.position"
+        [label]="marker.label"
+        [title]="marker.title"
+        [options]="marker.options"
+        (mapClick)="openInfo(markerElem, marker.info)"
+      >
+      </map-marker>
+      <map-info-window [innerHtml]="infoContent"></map-info-window>
+    </google-map>
         </div>
       </div>
-      <google-map
-        height="500px"
-        width="1200px"
-        [zoom]="zoom"
-        [center]="center"
-        [options]="options"
-      >
-        <map-marker
-          #markerElem
-          *ngFor="let marker of markers"
-          [position]="marker.position"
-          [label]="marker.label"
-          [title]="marker.title"
-          [options]="marker.options"
-          (mapClick)="openInfo(markerElem, marker.info)"
-        >
-        </map-marker>
-        <map-info-window [innerHtml]="infoContent"></map-info-window>
-      </google-map>
+      
     </div>
   </div>
 </section>

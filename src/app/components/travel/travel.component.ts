@@ -78,7 +78,7 @@ export class TravelComponent {
     },
   ];
 
-  zoom = 14;
+  zoom = 13;
   options: google.maps.MapOptions = {
     zoomControl: true,
     scrollwheel: false,

@@ -1,28 +1,23 @@
 .location-name {
-    margin-top: 30px;
-    transition: .6s;
-  }
-  
-  .location-name h4 {
-    font-family: 'Dawning of a New Day', cursive;
-    font-size: 45px;
-    color: #8B9DAC;
-    line-height: 35px;
-    margin-bottom: 20px;
-    font-weight: 600;
-  }
-  
-  .location-name p {
-    font-size: 16px;
-    color: #fff;
-    line-height: 30px;
-  }
+  margin-top: 0px !important;
+  transition: 0.6s;
+}
 
-  #map {
-    height: 500px;
-    width: 100%;
-   }
+.location-name h4 {
+  font-family: "Dawning of a New Day", cursive;
+  font-size: 45px;
+  color: #8b9dac;
+  line-height: 35px;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
 
-   agm-map {
-    height: 300px;
-  }
+.location-name p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 30px;
+}
+
+google-map {
+  display: contents;
+}
