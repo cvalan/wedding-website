@@ -11,7 +11,6 @@ import { PicturesComponent } from './components/pictures/pictures.component';
 import { WeddingPartyComponent } from './components/wedding-party/wedding-party.component';
 import { ErrorComponent } from './common/404/404.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
-import { LoginComponent } from './components/login/login.component';
 import { RegistryComponent } from './components/registry/registry.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AppHeaderComponent } from './common/header/app.header.component';
@@ -30,7 +29,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ErrorComponent,
     ContactComponent,
     ScheduleComponent,
-    LoginComponent,
     RegistryComponent,
     AppHeaderComponent,
     AppFooterComponent
