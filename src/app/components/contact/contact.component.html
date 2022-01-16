@@ -20,7 +20,6 @@
           <div class="row">
             <form
               [formGroup]="rsvpForm"
-              (ngSubmit)="onSubmit()"
               class="rsvp-form"
             >
               <div class="col-lg-12">
@@ -46,11 +45,11 @@
                     formControlName="attending"
                     required
                   >
-                    <option value="null" disabled="true" [selected]="true">
+                    <option value="" disabled="true" [selected]="true">
                       Select your RSVP status...
                     </option>
-                    <option [value]="true">Yes</option>
-                    <option [value]="false">No</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
                   </select>
                 </div>
               </div>
@@ -79,6 +78,7 @@
                   <input
                     name="songRequest"
                     id="songRequest"
+                    formControlName="songRequest"
                     type="songRequest"
                     class="form-control"
                     placeholder="List any songs you'd like the DJ to play..."
@@ -103,8 +103,8 @@
               <div class="col-lg-12">
                 <div class="d-flex justify-content-end">
                   <button
-                    type="submit"
                     class="btn btn-sm theme-btn text-white text-uppercase send-btn"
+                    (click)="open(content)"
                   >
                     RSVP
                   </button>
@@ -119,3 +119,17 @@
   </div>
 </section>
 <!-- End Get-In-Touch Area -->
+<!-- RSVP MODAL -->
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <h2>Thanks for your RSVP!</h2>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-sm theme-btn text-white" (click)="modal.close('Save click')">Close</button>
+  </div>
+</ng-template>
