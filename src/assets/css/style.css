@@ -48,7 +48,7 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   font-weight: 300;
-  background-color: #fff;
+  background-color: #2A2A2A;
   animation: pageAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -2364,12 +2364,12 @@ ul {
   }
 
   .navbar-toggler i {
-    font-size: 28px;
-    color: #e63f4b;
+    font-size: 2rem;
+    color: #314584;
   }
 
   .custom-nav {
-    background-color: #fff !important;
+    background-color: #2A2A2A !important;
     margin-top: 100px;
     padding: 10px 0px !important;
   }
@@ -2471,12 +2471,12 @@ ul {
   }
 
   .inner-hero-banner {
-    margin-top: 65px;
-    height: 150px;
+    /* margin-top: 0px; */
+    height: 15vh;
   }
 
   .inner-hero-text {
-    top: 50%;
+    top: 90%;
   }
 
   .footer .footer_menu_list li a {
@@ -2525,7 +2525,6 @@ ul {
   }
 
   .about-image-block, .about-text-block {
-    display: table;
     margin: 30px auto 0;
   }
 
