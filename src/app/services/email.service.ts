@@ -7,23 +7,20 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class EmailService {
   constructor(private http: HttpClient) {}
 
-  sendMail() {
+  sendMail(data: any) {
     this.http
       .post(
         'https://s10oa5h0ud.execute-api.us-east-1.amazonaws.com/prod/email/',
-        {
-          names: 'Har Bean, Chase Bear',
-          dietRestrictions: 'Give all the food',
-          comments: 'Plz give cubes too - har',
-        }
+        data
       )
-      .subscribe(
-        (res) => {
-          console.log('res : ', res);
-        },
-        (err) => {
-          console.log('err : ', err);
-        }
-      );
+      .toPromise()
+        .then(
+          response => {
+            console.log(response)
+          },
+          err => {
+            console.error('Oh NO!', err)
+          }
+        )
   }
 }
