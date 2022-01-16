@@ -16,6 +16,9 @@ import { AppHeaderComponent } from './common/header/app.header.component';
 import { AppFooterComponent } from './common/footer/app.footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { HttpClientModule } from '@angular/common/http';
+import { EmailService } from './services/email.service';
+import { ReactiveFormsModule } from '@angular/forms';
 // import {NgxTypedJsModule} from '../assets/js/ngx-typed-js/src/lib/ngx-typed-js.module';
 
 @NgModule({
@@ -30,18 +33,22 @@ import { GoogleMapsModule } from '@angular/google-maps';
     ScheduleComponent,
     RegistryComponent,
     AppHeaderComponent,
-    AppFooterComponent
+    AppFooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgwWowModule,
-    GoogleMapsModule
-   // NgxTypedJsModule
+    GoogleMapsModule,
+    HttpClientModule,
+    ReactiveFormsModule
+    // NgxTypedJsModule
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
-  bootstrap: [AppComponent, AppHeaderComponent, AppFooterComponent]
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    EmailService,
+  ],
+  bootstrap: [AppComponent, AppHeaderComponent, AppFooterComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
