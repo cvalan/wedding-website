@@ -181,7 +181,7 @@ $(window).on("scroll", function () {
     nav = $('.onepage-scroll'),
     nav_height = nav.outerHeight() + 25,
     win_scroll_top = $(window).scrollTop();
-  win_scroll_top >= 20 ? $("nav").addClass("sticky-header") : $(".sticky").removeClass("sticky-header");
+  win_scroll_top >= 50 ? $("nav").addClass("sticky-header") : $(".sticky").removeClass("sticky-header");
   win_scroll_top > 100 ? $(".back_top").fadeIn() : $(".back_top").fadeOut();
   /*----ON SCROLL CHANGE ACTIVE MENU-----*/
   var cur_pos = $(this).scrollTop();
