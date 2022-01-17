@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmailService } from './services/email.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 // import {NgxTypedJsModule} from '../assets/js/ngx-typed-js/src/lib/ngx-typed-js.module';
 
 @NgModule({
@@ -47,7 +48,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     // NgxTypedJsModule
   ],
-  providers: [EmailService],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    EmailService,
+  ],
   bootstrap: [AppComponent, AppHeaderComponent, AppFooterComponent],
 })
 export class AppModule {}
