@@ -101,28 +101,30 @@ $(document).ready(function () {
   if (".portfolio-items".length > 0) {
     var $container = $(".portfolio-items");
     var $filter = $("#portfolio-filter");
-    $container.isotope({
-      filter: "*",
-      layoutMode: "masonry",
-      animationOptions: {
-        duration: 750,
-        easing: "linear",
-      },
-    });
-    $filter.find("a").on("click", function () {
-      var selector = $(this).attr("data-filter");
-      $filter.find("a").removeClass("active");
-      $(this).addClass("active");
+    $container.imagesLoaded( function(){
       $container.isotope({
-        filter: selector,
+        filter: "*",
+        layoutMode: "masonry",
         animationOptions: {
-          animationDuration: 750,
+          duration: 750,
           easing: "linear",
-          queue: false,
-          touchSensitivity: 2,
         },
       });
-      return false;
+
+      $filter.find("a").on("click", function () {
+        var selector = $(this).attr("data-filter");
+        $filter.find("a").removeClass("active");
+        $(this).addClass("active");
+        $container.isotope({
+          filter: selector,
+          animationOptions: {
+            animationDuration: 750,
+            easing: "linear",
+            touchSensitivity: 2,
+          },
+        });
+        return false;
+      });
     });
   }
 
@@ -185,10 +187,6 @@ $(window).on("scroll", function () {
     nav = $(".onepage-scroll"),
     nav_height = nav.outerHeight() + 25,
     win_scroll_top = $(window).scrollTop();
-  win_scroll_top >= 80
-    ? $("nav").addClass("sticky-header")
-    : $(".sticky").removeClass("sticky-header");
-  win_scroll_top > 100 ? $(".back_top").fadeIn() : $(".back_top").fadeOut();
   /*----ON SCROLL CHANGE ACTIVE MENU-----*/
   var cur_pos = $(this).scrollTop();
   sections.each(function () {
@@ -224,17 +222,6 @@ $(window).on("scroll", function () {
   }),
   $(document).on("click", ".navbar-collapse.show", function (o) {
     $(o.target).is("a") && $(this).collapse("hide");
-  }),
-  $(".back_top").on("click", function () {
-    return (
-      $("html, body").animate(
-        {
-          scrollTop: 0,
-        },
-        1e3
-      ),
-      !1
-    );
   });
 
 /*----OTHER LINK JS-----*/

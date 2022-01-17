@@ -1,19 +1,27 @@
 .rsvp-form {
-    width: 100%;
+  width: 100%;
+}
+
+.rsvp-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 5px 5px 15px 5px #474747;
+  box-shadow: 5px 5px 15px 5px #474747;
 }
 
 label {
-    color: #fff;
+  color: black;
 }
 
-.modal-header{
-    border-bottom: unset;
+.modal-header {
+  border-bottom: unset;
 }
 
 .modal-footer {
-    border-top: unset;
+  border-top: unset;
 }
 
 .close {
-    font-size: 2rem;
+  font-size: 2rem;
 }
