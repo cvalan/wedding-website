@@ -101,28 +101,30 @@ $(document).ready(function () {
   if (".portfolio-items".length > 0) {
     var $container = $(".portfolio-items");
     var $filter = $("#portfolio-filter");
-    $container.isotope({
-      filter: "*",
-      layoutMode: "masonry",
-      animationOptions: {
-        duration: 750,
-        easing: "linear",
-      },
-    });
-    $filter.find("a").on("click", function () {
-      var selector = $(this).attr("data-filter");
-      $filter.find("a").removeClass("active");
-      $(this).addClass("active");
+    $container.imagesLoaded( function(){
       $container.isotope({
-        filter: selector,
+        filter: "*",
+        layoutMode: "masonry",
         animationOptions: {
-          animationDuration: 750,
+          duration: 750,
           easing: "linear",
-          queue: false,
-          touchSensitivity: 2,
         },
       });
-      return false;
+
+      $filter.find("a").on("click", function () {
+        var selector = $(this).attr("data-filter");
+        $filter.find("a").removeClass("active");
+        $(this).addClass("active");
+        $container.isotope({
+          filter: selector,
+          animationOptions: {
+            animationDuration: 750,
+            easing: "linear",
+            touchSensitivity: 2,
+          },
+        });
+        return false;
+      });
     });
   }
 
