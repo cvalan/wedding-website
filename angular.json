@@ -38,6 +38,7 @@
               "./node_modules/owl.carousel/dist/owl.carousel.js",
               "./src/assets/js/jquery.enllax.min.js",
               "./src/assets/js/typed.min.js",
+              "./src/assets/js/imagesloaded.pkgd.min.js",
               "./src/assets/js/isotope.pkgd.min.js",
               "./src/assets/js/jquery.magnific-popup.min.js",
               "./node_modules/wowjs/dist/wow.js",
