@@ -13,3 +13,9 @@
     margin-bottom: 0;
 }
 
+@media (max-width: 575px) {
+    .header.names {
+        font-size: 3rem;
+    }
+}
+
