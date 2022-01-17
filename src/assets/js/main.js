@@ -185,10 +185,6 @@ $(window).on("scroll", function () {
     nav = $(".onepage-scroll"),
     nav_height = nav.outerHeight() + 25,
     win_scroll_top = $(window).scrollTop();
-  win_scroll_top >= 80
-    ? $("nav").addClass("sticky-header")
-    : $(".sticky").removeClass("sticky-header");
-  win_scroll_top > 100 ? $(".back_top").fadeIn() : $(".back_top").fadeOut();
   /*----ON SCROLL CHANGE ACTIVE MENU-----*/
   var cur_pos = $(this).scrollTop();
   sections.each(function () {
@@ -224,17 +220,6 @@ $(window).on("scroll", function () {
   }),
   $(document).on("click", ".navbar-collapse.show", function (o) {
     $(o.target).is("a") && $(this).collapse("hide");
-  }),
-  $(".back_top").on("click", function () {
-    return (
-      $("html, body").animate(
-        {
-          scrollTop: 0,
-        },
-        1e3
-      ),
-      !1
-    );
   });
 
 /*----OTHER LINK JS-----*/

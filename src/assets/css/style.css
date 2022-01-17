@@ -103,40 +103,6 @@ ul {
   margin-bottom: 4rem;
 }
 
-.back_top {
-  background: #fff;
-  border: 2px solid #314584;
-  text-align: center;
-  position: fixed;
-  bottom: 20px;
-  height: 45px;
-  width: 45px;
-  display: none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  right: 20px;
-  transition: all 0.5s;
-  border-radius: 45px !important;
-  z-index: 99;
-}
-
-  .back_top i {
-    line-height: 40px;
-    font-size: 32px;
-    display: block;
-    color: #314584;
-  }
-
-  .back_top:hover {
-    background: #e63f4b;
-    border: 2px solid #e63f4b;
-  }
-
-    .back_top:hover i {
-      color: #fff;
-    }
-
 .modal-close {
   position: absolute;
   height: 30px;
@@ -419,26 +385,8 @@ ul {
   display: none;
 }
 
-.sticky-header .logo-dark {
-  display: block;
-}
-
-.sticky-header .logo-light {
-  display: none;
-}
-
-.sticky-header .header_btn .white-btn {
-  background: #fff;
-  color: #314584;
-}
-
-  .sticky-header .header_btn .white-btn:hover {
-    background: #e63f4b;
-    color: #fff;
-  }
-
 .custom-nav {
-  background-color: transparent;
+  background-color: #2A2A2A;
   width: 100%;
   padding: 18px 0px;
   -webkit-border-radius: 0px;
@@ -447,18 +395,11 @@ ul {
   margin-bottom: 0px;
   z-index: 999;
   transition: all 0.2s;
-  position: relative;
+  position: sticky;
 }
 
   .custom-nav .container-fluid {
     width: 90%;
-  }
-
-  .custom-nav.sticky-header {
-    position: fixed;
-    margin-top: 0px;
-    background-color: #2A2A2A;
-    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
   }
 
   .custom-nav .navbar-nav > li > a {
@@ -493,14 +434,6 @@ ul {
   .custom-nav .navbar-nav > li.active > a::before, .custom-nav .navbar-nav > li:hover > a::before {
     opacity: 1;
   }
-
-  .custom-nav.sticky-header .navbar-nav > li > a {
-    color: #fff;
-  }
-
-    .custom-nav.sticky-header .navbar-nav > li > a::before {
-      background-color: #314584;
-    }
 
 .dropdown-menu {
   padding: 0;
@@ -2380,14 +2313,6 @@ ul {
       padding: 6px 0;
       font-size: 24px;
     }
-
-    .custom-nav.sticky-header .navbar-nav li a {
-      color: #fff;
-    }
-
-      .custom-nav.sticky-header .navbar-nav li a::before, .custom-nav.sticky-header .navbar-nav li a::after {
-        background: #fff;
-      }
 
     .custom-nav .navbar-nav li.active a,
     .custom-nav .navbar-nav li:hover a {
