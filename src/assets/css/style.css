@@ -48,7 +48,7 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   font-weight: 300;
-  background-color: #2A2A2A;
+  background-color: #212121;
   animation: pageAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -100,7 +100,7 @@ ul {
 }
 
 .row {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .modal-close {
@@ -142,7 +142,7 @@ ul {
   padding-top: 10px;
   padding-bottom: 10px;
   overflow: hidden;
-  background-color: #2A2A2A;
+  background-color: #212121;
 }
 
 .section_title {
@@ -186,7 +186,7 @@ ul {
 }
 
 .inner-hero-banner {
-  background-color: #2A2A2A;
+  background-color: #212121;
   width: 100%;
   height: 10vh;
   background-position: center;
@@ -386,7 +386,7 @@ ul {
 }
 
 .custom-nav {
-  background-color: #2A2A2A;
+  background-color: #212121;
   width: 100%;
   padding: 18px 0px;
   -webkit-border-radius: 0px;
@@ -1716,7 +1716,7 @@ ul {
     margin-bottom: 1rem;
     font-weight: 400;
     border: none;
-    background: #f4fafe;
+    background: #f0f9ff;
   }
 
   .contact_form textarea, .login_form .textarea {
@@ -1804,7 +1804,7 @@ ul {
   position: relative;
   overflow: hidden;
   padding: 50px 0;
-  background: #2A2A2A;
+  background: #212121;
   z-index: 2;
 }
 
@@ -2303,7 +2303,7 @@ ul {
   }
 
   .custom-nav {
-    background-color: #2A2A2A !important;
+    background-color: #212121 !important;
     padding: 10px 0px !important;
   }
 
