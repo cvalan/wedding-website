@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { NgwWowModule } from 'ngx-wow';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -45,13 +44,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
     // NgxTypedJsModule
   ],
-  providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
-    EmailService,
-  ],
+  providers: [EmailService],
   bootstrap: [AppComponent, AppHeaderComponent, AppFooterComponent],
 })
 export class AppModule {}
